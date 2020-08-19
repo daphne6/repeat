@@ -1,11 +1,19 @@
-let birthYear = 2001
-if(birthYear % 400 ===0){
-    document.write('うるう年です');
-}
-else{ 
- if(birthYear % 100 !== 0 && birthYear % 4 ===0){
-    document.write('うるう年です');}
- else{
-    document.write('うるう年ではありません');
- }
+for(let i = 1;i <= 100;i++){
+    if(!(i % 3 && i % 5)){
+        if(i % 5){
+            document.write('Fizz')
+        }
+        else{
+            if(i % 3){
+                document.write('Buzz')
+            }
+            else{
+                document.write('FizzBuzz')
+            }
+        }
+    }
+    else{
+        document.write(i)
+    }
+    document.write('  ')
 }
